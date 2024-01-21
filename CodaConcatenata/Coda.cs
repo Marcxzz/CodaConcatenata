@@ -29,18 +29,16 @@
 
         public void Pop()
         {
-            if (nElementi > 0)
+            if (nElementi > 1)
             {
-                if (nElementi == 1)
-                {
-                    primo = null;
-                    ultimo = null;
-                }
-                else
-                {
-                    primo = primo.NodoSuccessivo;
-                }
+                primo = primo.NodoSuccessivo;
                 nElementi--;
+            }
+            else
+            {
+                primo = null;
+                ultimo = null;
+                nElementi = 0;
             }
         }
 
