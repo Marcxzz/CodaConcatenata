@@ -31,20 +31,20 @@
             textBoxValore = new TextBox();
             buttonPush = new Button();
             buttonPop = new Button();
-            listBox1 = new ListBox();
-            label1 = new Label();
+            listBoxCoda = new ListBox();
             SuspendLayout();
             // 
             // textBoxValore
             // 
-            textBoxValore.Location = new Point(21, 38);
+            textBoxValore.Location = new Point(19, 23);
             textBoxValore.Name = "textBoxValore";
+            textBoxValore.PlaceholderText = "Valore del nuovo nodo";
             textBoxValore.Size = new Size(158, 23);
             textBoxValore.TabIndex = 0;
             // 
             // buttonPush
             // 
-            buttonPush.Location = new Point(185, 38);
+            buttonPush.Location = new Point(183, 23);
             buttonPush.Name = "buttonPush";
             buttonPush.Size = new Size(117, 23);
             buttonPush.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             // buttonPop
             // 
-            buttonPop.Location = new Point(308, 38);
+            buttonPop.Location = new Point(306, 23);
             buttonPop.Name = "buttonPop";
             buttonPop.Size = new Size(117, 23);
             buttonPop.TabIndex = 2;
@@ -62,31 +62,21 @@
             buttonPop.UseVisualStyleBackColor = true;
             buttonPop.Click += buttonPop_Click;
             // 
-            // listBox1
+            // listBoxCoda
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(21, 67);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(404, 229);
-            listBox1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(21, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(126, 15);
-            label1.TabIndex = 4;
-            label1.Text = "Valore del nuovo nodo";
+            listBoxCoda.FormattingEnabled = true;
+            listBoxCoda.ItemHeight = 15;
+            listBoxCoda.Location = new Point(19, 52);
+            listBoxCoda.Name = "listBoxCoda";
+            listBoxCoda.Size = new Size(404, 229);
+            listBoxCoda.TabIndex = 3;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(450, 324);
-            Controls.Add(label1);
-            Controls.Add(listBox1);
+            ClientSize = new Size(444, 304);
+            Controls.Add(listBoxCoda);
             Controls.Add(buttonPop);
             Controls.Add(buttonPush);
             Controls.Add(textBoxValore);
@@ -101,7 +91,6 @@
         private TextBox textBoxValore;
         private Button buttonPush;
         private Button buttonPop;
-        private ListBox listBox1;
-        private Label label1;
+        private ListBox listBoxCoda;
     }
 }

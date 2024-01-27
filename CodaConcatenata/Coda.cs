@@ -50,23 +50,24 @@
         /// </summary>
         public string Pop()
         {
-            // se nella coda c'è più di un elemento il primo nodo sarà il successivo del primo
+            // se nella coda c'è più di un elemento
             if (nElementi > 1)
             {
+                // il primo nodo sarà il successivo si sé stesso
                 primo = primo.NodoSuccessivo;
                 // il numero di elementi viene decrementato
                 nElementi--;
                 // viene restituita una stringa che comunica l'esito dell'operazione 
-                return $"Primo nodo rimosso, sono rimasti {nElementi} nodi";
+                return $"Il primo nodo è stato rimosso, nodi rimanenti:";
             }
-            // sennò sia il primo che l'ultimo elemento saranno null e il numero di elementi sarà 0
+            // sennò la coda verrà svuotata e il numero di elementi sarà 0
             else
             {
                 primo = null;
                 ultimo = null;
                 nElementi = 0;
                 // viene restituita una stringa che comunica l'esito dell'operazione 
-                return $"Ora la coda è vuota";
+                return $"La coda è vuota";
             }
         }
 
